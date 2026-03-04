@@ -121,6 +121,7 @@
         display: flex;
         flex-direction: column;
         height: auto;
+        width: 80%;
     }
 
     .cards-coments-one, 
@@ -133,5 +134,38 @@
         font-size: 10px;
     }
 
+    .box-content-second {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .box-content-second p {
+        width: 100%;
+    }
+
+    .app-content {
+        flex-direction: column
+        ;
+    }
+
+    .box-content {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .box-content h2 {
+        font-size: 25px;
+
+    }
+
+    .button-app-download{
+        margin-top: 90px;
+    }
+
+    .phone-box {
+        height: 350px;
+        gap: 10px;      
+    }
 
 }
