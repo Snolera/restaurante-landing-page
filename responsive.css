@@ -152,6 +152,7 @@
     .box-content {
         flex-direction: column-reverse;
         height: auto;
+        gap: 0;
     }
 
     .box-content h2 {
@@ -161,6 +162,7 @@
 
     .button-app-download{
         margin-top: 90px;
+        margin-left: 0;
     }
 
     .phone-box {
