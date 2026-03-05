@@ -72,14 +72,6 @@
         width: 100%;
     }
 
-    .cards-two-menu {
-        width: 100%;
-    }
-
-    .cards-tree-menu {
-        width: 100%;
-    }
-
 
 /*            BANNER FIRST                               */
 
@@ -124,9 +116,7 @@
         width: 80%;
     }
 
-    .cards-coments-one, 
-    .cards-coments-two, 
-    .cards-coments-tree {
+    .cards-coments-one {
         height: 410px;
     }
 
@@ -168,6 +158,11 @@
     .phone-box {
         height: 350px;
         gap: 10px;      
+    }
+    
+
+    .footer p {
+        font-size: 12px;
     }
 
 }
