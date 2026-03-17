@@ -37,16 +37,59 @@
         </header>
     
 
-        <main class="main-home">
+        <main class="main-home" id="#home">
             <section class="home">
                 <div class="content-home">
                     <p>Olá, Meu Amigo</p>
                     <h1>RESERVE SUA MESA</h1>
                     <div>
-                        <button class="book-a-table">RESERVE</button>
+                        <button class="book-a-table" onclick="abrirForm()">RESERVE</button>
                         <button class="open-menu">ABRA O MENU</button>
                     </div>
                 </div>
+
+                <section class="container">
+
+                    <div class="form-container">
+                
+                        <form id="formReserva" action="#">
+                            
+                            <div class="box-form">
+                                <p>*Nome Completo</p>
+                                <input type="text" id="nome">
+                                <span class="erro" id="erroNome"></span>
+                            </div>
+                
+                            <div class="box-form">
+                                <p>*Número de telefone</p>
+                                <input type="number" id="telefone">
+                                <span class="erro" id="erroTelefone"></span>
+                            </div>
+                            
+                            <div class="box-form">
+                                <p>*Email</p>
+                                <input type="text" id="email">
+                                <span class="erro" id="erroEmail"></span>
+                            </div>
+                
+                            <div class="box-form">
+                                <p>*Quantos Lugares?</p>
+                                <input type="number" id="lugares">
+                                <span class="erro" id="erroLugares"></span>
+                            </div>
+                
+                            <button type="submit" class="button-form">RESERVAR</button>
+                            <button type="button" class="button-form-exit" onclick="fecharForm()">Cancelar</button>
+                
+                        </form>
+                
+                        <p id="mensagemSucesso" style="display:none; color:green;">
+                            Reserva realizada com sucesso!
+                        </p>
+                
+                    </div>
+                
+                </section>
 
             </section>
         </main>
@@ -164,7 +207,7 @@
                         <h2 class="title-banner">RESERVE</h2>
                         <h3>VENHA NOS VISITAR</h3>
                         <div>
-                            <button class="book-a-table">RESERVE</button>
+                            <button class="book-a-table" href="#home">RESERVE</button>
                             <button class="contact-us">FALE CONOSCO</button>
                         </div>      
                     </div>
@@ -326,4 +369,6 @@
     
 </body>
 <script src="./scripts.js"></script>
+<script src="./form.js"></script>
+<script src="./validaForm.js"></script>
 </html>

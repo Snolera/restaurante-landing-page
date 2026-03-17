@@ -169,6 +169,97 @@ html {
     
 }
 
+
+/*-----------------------------------------------------FORMULARIO--------------------------------------------------------------------*/
+
+.container {
+    position: fixed; /* fica por cima de tudo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* começa escondido */
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4); /* fundo escuro */
+    backdrop-filter: blur(8px); /* efeito vidro */
+    -webkit-backdrop-filter: blur(8px); /* safari */
+    z-index: 999; /* garante que fica na frente */
+
+}
+
+.container.active {
+    display: flex;
+}
+
+.form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 20vw;
+}
+
+.box-form {
+
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.box-form input {
+    border-radius: 5px;
+    border: 1px solid #000;
+    width: 100%;
+    outline: none;
+}
+
+.button-form {
+    cursor: pointer;
+    width: 144px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid ;
+    color: #D68240;
+    transition: background-color 0.5s ease;     
+}
+
+.button-form:hover {
+    color: #fff;
+    background-color: #D68240;
+    border: none;
+}
+.button-form-exit {
+    cursor: pointer;
+    width: 144px;
+    height: 40px;
+    background: transparent;
+    color: #D68240;
+    transition: background-color 0.5s ease;
+    
+}
+
+.button-form-exit:hover {
+    color: #fff;
+    background-color: #D68240;
+    
+}
+
+.exit-button:hover {
+    color: #D68240;
+    font-weight: bold;
+}
+
+.erro {
+    color: red;
+    font-size: 12px;
+}
+
+input.erro-input {
+    border: 1px solid red;
+}
+
 /*-----------------------------------------------------SECOND SECTION--------------------------------------------------------------------*/
 
 
